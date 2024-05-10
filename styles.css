@@ -5,10 +5,10 @@ body, html {
 }
 
 body {
-    background-image: url('websitemain.png'); /* Change 'background.png' to your image file */
-    background-position: center;
+    background-image: url('background.png'); /* Change 'background.png' to your image file */
+    background-position: center top; /* Aligns the image at the center top */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%; /* Adjusts the width automatically to maintain aspect ratio and ensures the height fits the viewport */
 }
 
 .content {
