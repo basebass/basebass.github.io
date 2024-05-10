@@ -1,30 +1,24 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensures that html and body cover at least the full viewport height */
-    min-height: 100%; /* Allows expansion beyond the viewport height if necessary */
+    height: auto; /* Allow the body height to grow with the content */
+    min-height: 100%;
     width: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 body {
-    background-image: url('websitemain.png'); /* Ensure this is the correct path to your image */
-    background-position: top center; /* Aligns the image at the top and centers it horizontally */
+    background-image: url('websitemain.png'); /* Make sure this path is correct */
+    background-position: top center; /* Centers the image horizontally and aligns the top */
     background-repeat: no-repeat;
-    background-size: 100% auto; /* Ensures the image fills the width and height adjusts automatically */
-    position: relative; /* Establishes a positioning context for descendants */
+    background-size: 100% auto; /* Image width fills the screen, height adjusts automatically */
+    background-attachment: scroll; /* Ensures the background scrolls with the content */
 }
 
 .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100vh; /* Ensures content area is at least as tall as the viewport */
-    z-index: 10; /* Keeps the content above the background */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative; /* Keeps content on top of the background */
+    z-index: 10; /* Ensures the content is above the background */
     color: white;
+    text-align: center;
+    min-height: 100vh; /* Ensures there's enough content to demonstrate scrolling */
+    padding: 20px; /* Adjust as needed */
 }
