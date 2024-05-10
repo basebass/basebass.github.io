@@ -1,24 +1,30 @@
-html {
-    height: 100%; /* Ensures the html element covers at least the viewport height */
-    width: 100%; /* Ensures the html element covers the full width */
-}
-
-body {
+html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%; /* Minimum height as the viewport to ensure coverage */
-    background-image: url('websitemain.png'); /* Adjust the file name as needed */
-    background-position: top center; /* Aligns the top of the image at the top and center horizontally */
-    background-repeat: no-repeat;
-    background-size: 100% auto; /* Stretches the image to cover the width, height adjusts automatically */
+    height: 100%; /* Ensures that html and body cover at least the full viewport height */
+    min-height: 100%; /* Allows expansion beyond the viewport height if necessary */
+    width: 100%;
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+body {
+    background-image: url('websitemain.png'); /* Ensure this is the correct path to your image */
+    background-position: top center; /* Aligns the image at the top and centers it horizontally */
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* Ensures the image fills the width and height adjusts automatically */
+    position: relative; /* Establishes a positioning context for descendants */
+}
+
 .content {
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh; /* Ensures content area is at least as tall as the viewport */
+    z-index: 10; /* Keeps the content above the background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: white;
-    text-align: center;
-    min-height: 100vh; /* This ensures the .content area is at least as tall as the viewport */
-    padding-top: 20px; /* Adjust as needed */
 }
