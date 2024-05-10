@@ -1,17 +1,17 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;  /* Ensures that the HTML and body take up at least the full height of the viewport */
-    min-height: 100%; /* This helps ensure that the body is as tall as the content */
-    width: 100%;   /* Ensures that the HTML and body take up the full width of the viewport */
-    overflow-x: hidden; /* Prevents horizontal scrolling in case of minor overflow */
+html {
+    height: 100%; /* Ensures the html element covers at least the viewport height */
+    width: 100%; /* Ensures the html element covers the full width */
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Minimum height as the viewport to ensure coverage */
     background-image: url('websitemain.png'); /* Adjust the file name as needed */
-    background-position: top center; /* Aligns the image at the top and centers horizontally */
+    background-position: top center; /* Aligns the top of the image at the top and center horizontally */
     background-repeat: no-repeat;
-    background-size: 100% auto; /* Stretches the image to cover the width and adjusts height automatically */
+    background-size: 100% auto; /* Stretches the image to cover the width, height adjusts automatically */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 .content {
@@ -19,5 +19,6 @@ body {
     z-index: 10;
     color: white;
     text-align: center;
-    padding-top: 20px; /* Adjust this as needed for content positioning */
+    min-height: 100vh; /* This ensures the .content area is at least as tall as the viewport */
+    padding-top: 20px; /* Adjust as needed */
 }
