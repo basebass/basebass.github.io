@@ -29,11 +29,13 @@ body {
     align-items: center;
     gap: 20px; /* Adjust the gap between the images as needed */
     margin-top: 50px; /* Adjust the margin to position the buttons vertically */
+    width: 75vw; /* Set the width of the container to 75% of the viewport width */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image-buttons a img {
-    width: 100px; /* Adjust the width of the images as needed */
+    width: 100%; /* Each image will take up 100% of the container's width */
     height: auto; /* Maintains the aspect ratio */
     cursor: pointer;
 }
-
