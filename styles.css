@@ -44,15 +44,15 @@ body {
 }
 
 /* Media queries for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .image-buttons {
         margin-top: calc(35.33vh - 25px); /* Adjust this value as needed for smaller screens */
     }
 }
 
 footer {
-    background-color: #f1f1f1;
-    padding: 10px;
+    background-color: #ffca45;
+    padding: 20px 10px; /* Adjust the padding to make the footer slightly larger than the text */
     text-align: center;
     position: sticky;
     bottom: 0;
@@ -62,6 +62,7 @@ footer {
 
 footer p {
     font-size: 3em; /* Making the text 3 times larger */
-    color: #ffca45; /* Changing the text color */
+    color: black; /* Keeping the text color as black */
+    margin: 0; /* Remove default margins */
 }
 
