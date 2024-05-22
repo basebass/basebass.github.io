@@ -72,4 +72,21 @@ footer p {
     overflow: hidden; /* Prevent text overflow */
 }
 
+.copy-button {
+    background-color: #ffca45;
+    border: 2px solid brown;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.copy-button:hover {
+    background-color: #ffd864; /* Slightly lighter on hover */
+}
+
+
 
