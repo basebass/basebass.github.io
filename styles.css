@@ -48,6 +48,10 @@ body {
     .image-buttons {
         margin-top: calc(35.33vh - 25px); /* Adjust this value as needed for smaller screens */
     }
+    
+    footer p {
+        font-size: 0.8em; /* Smaller font size for mobile devices */
+    }
 }
 
 footer {
@@ -85,3 +89,4 @@ footer p {
 .copy-button:hover {
     background-color: #ffd864; /* Slightly lighter on hover */
 }
+
