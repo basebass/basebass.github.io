@@ -64,13 +64,12 @@ footer {
 }
 
 footer p {
-    font-size: 2em; /* Adjust the text size */
+    font-size: 1em; /* Adjust the text size */
     color: black; /* Keeping the text color as black */
     margin: 0; /* Remove default margins */
     max-width: 50%; /* Ensure the text takes up half the page */
     white-space: nowrap; /* Keep the text on one line */
     overflow: hidden; /* Prevent text overflow */
-    text-overflow: ellipsis; /* Add ellipsis if text overflows */
 }
 
 
