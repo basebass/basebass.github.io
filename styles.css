@@ -55,13 +55,13 @@ body {
 }
 
 footer {
-    background-color: #ffca45;
+    background-color: #a7a9ab;
     padding: 10px;
     text-align: center;
     position: sticky;
     bottom: 0;
     width: 100%;
-    border: 3px solid brown;
+    border: 3px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
