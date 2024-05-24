@@ -22,7 +22,7 @@
             </a>
         </div>
         <div class="music-button">
-            <button onclick="playAudio()">
+            <button onclick="toggleAudio()">
                 <img src="musicbutton.png" alt="Music Button">
             </button>
         </div>
@@ -49,9 +49,13 @@
             alert("Copied to clipboard: " + address);
         }
 
-        function playAudio() {
+        function toggleAudio() {
             const audio = document.getElementById('spacebaseaudio');
-            audio.play();
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
         }
     </script>
 </body>
