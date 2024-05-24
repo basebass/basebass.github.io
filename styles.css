@@ -47,7 +47,7 @@ body {
 /* Media queries for mobile devices */
 @media (max-width: 768px) {
     .image-buttons {
-        margin-top: calc(45.33vh - 25px); /* Adjust this value as needed for smaller screens */
+        margin-top: calc(40.33vh - 25px); /* Adjust this value as needed for smaller screens */
     }
     
     footer p {
