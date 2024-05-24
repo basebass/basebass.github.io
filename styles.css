@@ -50,10 +50,16 @@ body {
     margin-top: 20px; /* Add some space between the original buttons and the music button */
 }
 
-.music-button button img {
-    width: auto; /* Adjust as needed */
-    height: auto; /* Adjust as needed */
+.music-button button {
+    background: none; /* Remove button background */
+    padding: 0; /* Remove button padding */
+    border: none; /* Remove button border */
     cursor: pointer;
+}
+
+.music-button button img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Media queries for mobile devices */
