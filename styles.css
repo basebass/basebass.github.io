@@ -28,6 +28,7 @@ body {
 
 .image-buttons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px; /* Adjust the gap between the images as needed */
@@ -37,10 +38,18 @@ body {
     margin-right: auto;
 }
 
-.image-buttons a img {
+.image-buttons a img,
+.image-buttons button img {
     width: 100%; /* Each image will take up 100% of the container's width */
     height: auto; /* Maintains the aspect ratio */
     cursor: pointer;
+    border: none; /* Remove border from button images */
+}
+
+.image-buttons button {
+    background: none; /* Remove button background */
+    padding: 0; /* Remove button padding */
+    border: none; /* Remove button border */
 }
 
 /* Media queries for mobile devices */
