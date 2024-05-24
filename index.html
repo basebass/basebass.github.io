@@ -20,6 +20,9 @@
             <a href="" target="_blank">
                 <img src="telegrambutton.png" alt="Telegram Button">
             </a>
+            <button onclick="playAudio()">
+                <img src="musicbutton.png" alt="Music Button">
+            </button>
         </div>
         <div style="height: 2000px;"></div> <!-- This height is for demonstration, adjust as needed -->
     </div>
@@ -29,6 +32,8 @@
             <button class="copy-button" onclick="copyToClipboard()">Copy</button>
         </p>
     </footer>
+
+    <audio id="spacebaseaudio" src="spacebaseaudio.mp3"></audio>
 
     <script>
         function copyToClipboard() {
@@ -40,6 +45,11 @@
             document.execCommand("copy");
             document.body.removeChild(textarea);
             alert("Copied to clipboard: " + address);
+        }
+
+        function playAudio() {
+            const audio = document.getElementById('spacebaseaudio');
+            audio.play();
         }
     </script>
 </body>
