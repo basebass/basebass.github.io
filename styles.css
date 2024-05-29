@@ -1,47 +1,46 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Set height to 100% */
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    height: 100%;
 }
 
 body {
     background-image: url('websitemain.png'); /* Make sure this path is correct */
-    background-position: top center; /* Centers the image horizontally and aligns the top */
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: 100% auto; /* Image width fills the screen, height adjusts automatically */
+    background-size: contain; /* Adjusts size of the background image to fit the container */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    justify-content: flex-start;
     min-height: 100vh; /* Ensure body takes full height of viewport */
+    overflow: auto; /* Allows scrolling if content overflows */
 }
 
 .content {
-    position: relative; /* Keeps content on top of the background */
-    z-index: 10; /* Ensures the content is above the background */
+    position: relative;
+    z-index: 10;
     color: white;
     text-align: center;
-    padding: 20px; /* Adjust as needed */
-    flex: 1; /* Allow content to grow */
+    padding: 20px;
 }
 
 .image-buttons {
-    display: block; /* Change to block to stack items vertically */
-    gap: 20px; /* Adjust the gap between the images as needed */
-    margin-top: 20px; /* Adjust the margin top to fit your needs */
-    width: 75vw; /* Set the width of the container to 75% of the viewport width */
+    display: block;
+    gap: 20px;
+    margin-top: 20px;
+    width: 75vw;
 }
 
 .image-buttons a {
-    display: block; /* Ensures each anchor is a block element for stacking */
-    margin-bottom: 20px; /* Space between buttons */
+    display: block;
+    margin-bottom: 20px;
 }
 
 .image-buttons a img {
     width: 50%; /* Each image will take up 50% of the container's width */
-    height: auto; /* Maintains the aspect ratio */
+    height: auto;
     cursor: pointer;
 }
 
@@ -49,26 +48,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Add some space between the original buttons and the music button */
+    margin-top: 20px;
 }
 
 .music-button button {
-    background: none; /* Remove button background */
-    padding: 0; /* Remove button padding */
-    border: none; /* Remove button border */
+    background: none;
+    padding: 0;
+    border: none;
     cursor: pointer;
 }
 
 .music-button button img {
     width: 80px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
 }
 
 /* Media queries for desktop devices */
 @media (min-width: 769px) {
     .music-button button img {
         width: 160px; /* Adjust the width as needed for desktop */
-        height: auto; /* Maintain aspect ratio */
+        height: auto;
     }
 }
 
@@ -84,17 +83,17 @@ body {
 }
 
 footer {
-    background-color: #573f47;
+    background-color: #a7a9ab;
     padding: 10px;
     text-align: center;
     position: sticky;
     bottom: 0;
     width: 100%;
-    border: 3px solid white;
+    border: 3px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20; /* Ensure the footer is above other elements */
+    z-index: 20;
 }
 
 footer p {
@@ -106,7 +105,7 @@ footer p {
 }
 
 .copy-button {
-    background-color: #a36f5c;
+    background-color: #0052ff;
     border: 2px solid black;
     color: black;
     font-size: 1em;
@@ -116,6 +115,5 @@ footer p {
 }
 
 .copy-button:hover {
-    background-color: #a98375; /* Slightly lighter on hover */
+    background-color: #ffd864;
 }
-
