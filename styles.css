@@ -4,6 +4,7 @@ html, body {
     height: auto; /* Allow the body height to grow with the content */
     min-height: 100%;
     width: 100%;
+    background-color: #7e5148; /* Set the background color */
 }
 
 body {
@@ -21,6 +22,7 @@ body {
     z-index: 10; /* Ensures the content is above the background */
     color: white;
     text-align: center;
+    margin-top: 5vh;
     min-height: 100vh; /* Ensures there's enough content to demonstrate scrolling */
     padding: 20px; /* Adjust as needed */
     flex: 1; /* Allows the content to grow and push the footer down */
