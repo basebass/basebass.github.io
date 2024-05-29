@@ -10,7 +10,8 @@ body {
     background-image: url('websitemain.png'); /* Make sure this path is correct */
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover; /* Ensures the image covers the full width */
+    background-size: 100% auto; /* Image width fills the screen, height adjusts automatically */
+    background-attachment: scroll; /* Ensures the background scrolls with the content */
     display: flex;
     flex-direction: column;
     align-items: center;
