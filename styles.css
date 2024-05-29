@@ -43,7 +43,7 @@ body {
 }
 
 .image-buttons a img {
-    width: 100%; /* Each image will take up 100% of the container's width */
+    width: 50%; /* Each image will take up 50% of the container's width */
     height: auto; /* Maintains the aspect ratio */
     cursor: pointer;
 }
@@ -121,4 +121,5 @@ footer p {
 .copy-button:hover {
     background-color: #ffd864; /* Slightly lighter on hover */
 }
+
 
