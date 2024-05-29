@@ -3,19 +3,20 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 body {
     background-image: url('websitemain.png'); /* Make sure this path is correct */
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: contain; /* Adjusts size of the background image to fit the container */
+    background-size: cover; /* Ensures the image covers the full width */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh; /* Ensure body takes full height of viewport */
-    overflow: auto; /* Allows scrolling if content overflows */
+    overflow-y: auto; /* Allows vertical scrolling */
 }
 
 .content {
@@ -117,3 +118,4 @@ footer p {
 .copy-button:hover {
     background-color: #ffd864;
 }
+
