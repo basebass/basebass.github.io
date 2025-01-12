@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleepy Doge</title>
+    <link rel="icon" type="image/png" href="sleepydogeicon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #e9e6d7;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            animation: breathing 3s ease-in-out infinite;
+        }
+
+        @keyframes breathing {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .z-animation {
+            margin-top:70px;
+            margin-right: 10%;
+            position: absolute;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6);
+            animation: floatZ 3s ease-in-out infinite;
+        }
+
+        .z1 {
+            top: -50px;
+            left: 150px;
+            animation-delay: 0s;
+        }
+
+        .z2 {
+            top: -70px;
+            left: 170px;
+            animation-delay: 0.5s;
+        }
+
+        .z3 {
+            top: -90px;
+            left: 190px;
+            animation-delay: 1s;
+        }
+
+        @keyframes floatZ {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #ffffff;
+            background: #a1a098;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #2980b9;
+        }
+
+        .button img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="sleepydoge.png" alt="Sleepy Doge">
+        <div class="z-animation z1">Z</div>
+        <div class="z-animation z2">Z</div>
+        <div class="z-animation z3">Z</div>
+    </div>
+
+    <a class="button" href="https://dexscreener.com" target="_blank">
+        <img src="dexscreener.png" alt="DEXScreener Logo">DEXScreener
+    </a>
+    <a class="button" href="https://twitter.com" target="_blank">
+        <img src="twitter.png" alt="Twitter Logo">Twitter
+    </a>
+    <a class="button" href="https://telegram.org" target="_blank">
+        <img src="telegram.png" alt="Telegram Logo">Telegram
+    </a>
+</body>
+</html>
